@@ -6,13 +6,13 @@ const caroselloImmagini = [
     './img/05.webp'
 ];
 
-const imagesContainerDOMElement = document.querySelector('.images-container');
+const fotoSfondoDOMElement = document.querySelector('.foto-sfondo');
 
-imagesContainerDOMElement.innerHTML =`<div class="foto-sfondo">
-<img src="./img/01.webp" alt="">
-</div>`;
+fotoSfondoDOMElement.innerHTML =`<img src="./img/01.webp" alt="">`;
 
-
+for (let i = 0; i < caroselloImmagini.length; i++){
+    console.log(caroselloImmagini[i]);
+}
 
 
 
