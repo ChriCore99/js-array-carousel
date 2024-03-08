@@ -8,16 +8,16 @@ const caroselloImmagini = [
 
 const fotoSfondoDOMElement = document.querySelector('.foto-sfondo');
 
-fotoSfondoDOMElement.innerHTML =`<img src="./img/01.webp" alt="">`;
 
-for (let i = 0; i < caroselloImmagini.length; i++){
-    console.log(caroselloImmagini[i]);
-}
-
-
-
-
-
+// for (let i = 0; i < caroselloImmagini.length; i++){
+    //     console.log(caroselloImmagini[i]);
+    // }
+    
+    
+    
+let index = 0;
+    
+fotoSfondoDOMElement.innerHTML =`<img src="${caroselloImmagini[index]}" alt="">`;
 
 const btnScorrimentoSu = document.querySelector('.btn-su');
 
@@ -25,8 +25,11 @@ const btnScorrimentoGiu = document.querySelector('.btn-giu');
 
 btnScorrimentoSu.addEventListener('click', function(){
     console.log('click div su');
+    index++
+    fotoSfondoDOMElement.innerHTML =`<img src="${caroselloImmagini[index]}" alt="">`;
 })
 
 btnScorrimentoGiu.addEventListener('click', function(){
-    console.log('click div giu');
+    index--
+    fotoSfondoDOMElement.innerHTML =`<img src="${caroselloImmagini[index]}" alt="">`;
 })
