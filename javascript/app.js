@@ -6,14 +6,7 @@ const caroselloImmagini = [
     './img/05.webp'
 ];
 
-const fotoSfondoDOMElement = document.querySelector('.foto-sfondo');
-
-
-// for (let i = 0; i < caroselloImmagini.length; i++){
-    //     console.log(caroselloImmagini[i]);
-    // }
-    
-    
+const fotoSfondoDOMElement = document.querySelector('.foto-sfondo');   
     
 let index = 0;
     
